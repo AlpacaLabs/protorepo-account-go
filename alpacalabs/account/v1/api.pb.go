@@ -25,35 +25,37 @@ const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
 func init() { proto.RegisterFile("alpacalabs/account/v1/api.proto", fileDescriptor_03cae58ae5df80bb) }
 
 var fileDescriptor_03cae58ae5df80bb = []byte{
-	// 433 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x94, 0x94, 0x51, 0xab, 0xd3, 0x30,
-	0x14, 0xc7, 0xdd, 0x04, 0xc1, 0xa0, 0x13, 0x23, 0x7b, 0x70, 0x2f, 0x82, 0x20, 0x2a, 0xae, 0xe9,
-	0x3a, 0xbf, 0x80, 0xdd, 0x94, 0x21, 0x0c, 0x19, 0x0a, 0x7b, 0x90, 0xc1, 0x48, 0xdb, 0xe3, 0x56,
-	0x68, 0x9b, 0x9a, 0xa6, 0x43, 0x11, 0xfc, 0x30, 0xfa, 0x76, 0x9f, 0xee, 0xe7, 0xb8, 0x9f, 0xea,
-	0xd2, 0x2e, 0xe9, 0xd2, 0xad, 0xb9, 0xeb, 0x5e, 0x93, 0xdf, 0x7f, 0xbf, 0x9d, 0x9c, 0xd3, 0x83,
-	0x5e, 0xd0, 0x28, 0xa5, 0x3e, 0x8d, 0xa8, 0x97, 0xd9, 0xd4, 0xf7, 0x59, 0x9e, 0x08, 0x7b, 0xe7,
-	0xd8, 0x34, 0x0d, 0x49, 0xca, 0x99, 0x60, 0xb8, 0x7f, 0x00, 0x88, 0x04, 0xc8, 0xce, 0x19, 0xbc,
-	0x36, 0xe6, 0xd6, 0x8a, 0x2a, 0xf3, 0x83, 0x57, 0x66, 0x10, 0x62, 0x1a, 0x46, 0x12, 0x1b, 0x9a,
-	0xb1, 0x74, 0xcb, 0x12, 0x58, 0x27, 0x79, 0xec, 0x01, 0xdf, 0xd3, 0xe3, 0xeb, 0x87, 0xa8, 0xe7,
-	0xee, 0xa9, 0x6f, 0xc0, 0x77, 0xa1, 0x0f, 0x38, 0x42, 0x8f, 0xa7, 0x1c, 0xa8, 0x00, 0x79, 0x8e,
-	0xdf, 0x91, 0xc6, 0x7f, 0x4e, 0x6a, 0xd4, 0x57, 0xf8, 0x99, 0x43, 0x26, 0x06, 0xc3, 0x76, 0x70,
-	0x96, 0xb2, 0x24, 0x83, 0x97, 0xf7, 0xb0, 0x8f, 0xd0, 0x0c, 0x84, 0x52, 0xbd, 0x31, 0xa4, 0x0f,
-	0x88, 0xf2, 0xbc, 0x6d, 0x41, 0x56, 0x12, 0x8e, 0x9e, 0xb8, 0x41, 0xf0, 0xa9, 0x78, 0x25, 0x37,
-	0x08, 0x38, 0x64, 0x19, 0xb6, 0x0c, 0xf9, 0x23, 0x4e, 0xe9, 0x48, 0x5b, 0xbc, 0x72, 0xfe, 0x45,
-	0xcf, 0xa6, 0x2c, 0xf9, 0x11, 0xf2, 0xb8, 0xe6, 0x75, 0x4c, 0xef, 0x73, 0xca, 0x2a, 0xf7, 0xf8,
-	0x92, 0x48, 0xe5, 0xff, 0x85, 0x9e, 0xce, 0x40, 0xe8, 0x97, 0x90, 0x61, 0xdb, 0xfc, 0x6a, 0x75,
-	0x52, 0xb9, 0x47, 0xed, 0x03, 0x7a, 0xe5, 0x47, 0xd7, 0x93, 0xdf, 0x9f, 0x3f, 0x1a, 0x2b, 0x6f,
-	0x60, 0xcf, 0x55, 0xde, 0x18, 0xa9, 0xfc, 0x0c, 0xf5, 0xdc, 0x20, 0x58, 0x14, 0xc3, 0xfe, 0xa5,
-	0x9c, 0x75, 0x3c, 0x34, 0x77, 0x4f, 0xc3, 0x94, 0xd5, 0x6a, 0x49, 0x57, 0xc2, 0x3f, 0x08, 0xcb,
-	0x5e, 0xe8, 0xd2, 0xd1, 0xdd, 0x6d, 0x6b, 0x10, 0x3b, 0x17, 0x24, 0xf4, 0xd9, 0x9e, 0x81, 0xd0,
-	0xee, 0xcc, 0xb3, 0x7d, 0xc4, 0x9d, 0x9b, 0xed, 0x13, 0x5c, 0x2f, 0xb8, 0x7e, 0x59, 0x36, 0x78,
-	0xd4, 0xea, 0x77, 0xf4, 0xfe, 0x3a, 0x17, 0x24, 0x94, 0x7c, 0xf2, 0xbf, 0x83, 0x9e, 0xfb, 0x2c,
-	0x6e, 0x8e, 0x4e, 0x1e, 0xc9, 0xaf, 0x7f, 0x51, 0xac, 0xb7, 0x45, 0xe7, 0xfb, 0x87, 0x4d, 0x28,
-	0xb6, 0xb9, 0x47, 0x7c, 0x16, 0xdb, 0x6e, 0x99, 0x98, 0x17, 0x9b, 0xb1, 0xdc, 0x7e, 0x1c, 0x52,
-	0x66, 0xc9, 0xac, 0xb5, 0x61, 0x76, 0xe3, 0xe6, 0xfc, 0xd7, 0xbd, 0xef, 0xce, 0xdd, 0xab, 0x6e,
-	0xff, 0x90, 0x26, 0xd2, 0x41, 0x96, 0xce, 0x8d, 0x7e, 0xbe, 0x92, 0xe7, 0xab, 0xa5, 0xe3, 0x3d,
-	0x28, 0x0d, 0xef, 0x6f, 0x03, 0x00, 0x00, 0xff, 0xff, 0x3e, 0x5b, 0x65, 0x62, 0x17, 0x06, 0x00,
-	0x00,
+	// 474 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x94, 0x95, 0x41, 0x8b, 0xd4, 0x30,
+	0x18, 0x86, 0xed, 0x0a, 0x1e, 0xa2, 0xae, 0x58, 0x1d, 0xc1, 0xb9, 0x08, 0x82, 0xa8, 0x38, 0x4d,
+	0xb7, 0x33, 0xeb, 0xdd, 0xee, 0x22, 0x73, 0x59, 0x64, 0x58, 0x71, 0x0f, 0xb2, 0xb0, 0xa4, 0xdd,
+	0xcf, 0xd9, 0x42, 0xdb, 0xd4, 0x24, 0x1d, 0x04, 0x41, 0x10, 0x04, 0xff, 0x87, 0xde, 0xfc, 0x25,
+	0xe2, 0xaf, 0x92, 0x76, 0x92, 0xb4, 0x9d, 0x4d, 0x66, 0xda, 0x6b, 0xfb, 0xbc, 0x79, 0x5e, 0x92,
+	0xaf, 0x0d, 0x7a, 0x42, 0xd2, 0x82, 0xc4, 0x24, 0x25, 0x11, 0xf7, 0x49, 0x1c, 0xd3, 0x32, 0x17,
+	0xfe, 0x2a, 0xf0, 0x49, 0x91, 0xe0, 0x82, 0x51, 0x41, 0xdd, 0x51, 0x03, 0x60, 0x09, 0xe0, 0x55,
+	0x30, 0x7e, 0x6e, 0xcd, 0x5d, 0x28, 0xaa, 0xce, 0x8f, 0x9f, 0xd9, 0x41, 0xc8, 0x48, 0x92, 0x4a,
+	0x6c, 0x62, 0xc7, 0x8a, 0x2b, 0x9a, 0xc3, 0x45, 0x5e, 0x66, 0x11, 0xb0, 0x35, 0x3d, 0xfd, 0x7b,
+	0x1b, 0xed, 0x87, 0x6b, 0xea, 0x3d, 0xb0, 0x55, 0x12, 0x83, 0x9b, 0xa2, 0xbb, 0xc7, 0x0c, 0x88,
+	0x00, 0xf9, 0xdc, 0x7d, 0x85, 0x8d, 0xcd, 0x71, 0x87, 0x3a, 0x85, 0xcf, 0x25, 0x70, 0x31, 0x9e,
+	0xf4, 0x83, 0x79, 0x41, 0x73, 0x0e, 0x4f, 0x6f, 0xb8, 0x31, 0x42, 0x73, 0x10, 0x4a, 0xf5, 0xc2,
+	0x92, 0x6e, 0x10, 0xe5, 0x79, 0xd9, 0x83, 0xd4, 0x92, 0xef, 0x0e, 0x7a, 0x78, 0x0a, 0xcb, 0x84,
+	0x0b, 0x60, 0x6f, 0xab, 0xbd, 0x0a, 0x2f, 0x2f, 0x19, 0x70, 0xee, 0x4e, 0x2d, 0xab, 0x98, 0x60,
+	0x65, 0x9e, 0x0d, 0xca, 0xe8, 0x0e, 0x3f, 0x1d, 0xf4, 0xe8, 0x43, 0xce, 0x4c, 0x2d, 0x0e, 0x2d,
+	0x2b, 0x9a, 0x71, 0xd5, 0xe3, 0xf5, 0xc0, 0x94, 0x6e, 0xf2, 0x0d, 0x3d, 0x38, 0xa6, 0xf9, 0xa7,
+	0x84, 0x65, 0x9d, 0x16, 0x81, 0xed, 0xe4, 0xae, 0xb3, 0xaa, 0xc2, 0x74, 0x48, 0x44, 0xfb, 0x19,
+	0xba, 0x37, 0x07, 0xd1, 0x71, 0x7b, 0xf6, 0xd3, 0x34, 0x79, 0x71, 0x5f, 0x5c, 0x3b, 0xbf, 0xa0,
+	0xfb, 0x1b, 0x2f, 0x81, 0xbb, 0x7e, 0xbf, 0x65, 0x40, 0x7b, 0x0f, 0xfa, 0x07, 0xda, 0xbb, 0xad,
+	0x26, 0x63, 0x51, 0x7d, 0x7f, 0xef, 0xea, 0xcf, 0xcf, 0xba, 0xdb, 0x06, 0x76, 0xd7, 0x6e, 0x1b,
+	0x23, 0xda, 0xff, 0xc3, 0x41, 0xa3, 0x66, 0x24, 0xda, 0x15, 0x66, 0x3b, 0x07, 0xc8, 0x50, 0xe2,
+	0x70, 0x58, 0x48, 0xd7, 0xf8, 0x8a, 0x5c, 0x39, 0x15, 0xed, 0x0a, 0x07, 0xdb, 0x07, 0xc8, 0xe0,
+	0x0f, 0x06, 0x24, 0xb4, 0x9c, 0xa2, 0xfd, 0x39, 0x88, 0xb6, 0x78, 0x62, 0x3f, 0x49, 0x83, 0xd4,
+	0xeb, 0x49, 0x6f, 0x8c, 0x78, 0xeb, 0xdd, 0xd6, 0x11, 0x6f, 0x73, 0x3d, 0x46, 0xbc, 0x8b, 0x2b,
+	0xe7, 0xd1, 0x6f, 0x07, 0x3d, 0x8e, 0x69, 0x66, 0xce, 0x1d, 0xdd, 0x91, 0x7f, 0xc5, 0x45, 0xf5,
+	0xdb, 0x5f, 0x38, 0x1f, 0xdf, 0x2c, 0x13, 0x71, 0x55, 0x46, 0x38, 0xa6, 0x99, 0x1f, 0xd6, 0x89,
+	0x93, 0xea, 0xc6, 0xa8, 0x6f, 0x05, 0x06, 0x05, 0xf5, 0x64, 0xd6, 0x5b, 0x52, 0xdf, 0x78, 0xa3,
+	0xfc, 0xda, 0xbb, 0x19, 0x9e, 0x84, 0x7f, 0xf6, 0x46, 0x4d, 0x1a, 0x4b, 0x07, 0x3e, 0x0b, 0xfe,
+	0xb5, 0x9f, 0x9f, 0xcb, 0xe7, 0xe7, 0x67, 0x41, 0x74, 0xab, 0x36, 0xcc, 0xfe, 0x07, 0x00, 0x00,
+	0xff, 0xff, 0xdb, 0x01, 0x53, 0x2e, 0x2f, 0x07, 0x00, 0x00,
 }
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -70,14 +72,16 @@ const _ = grpc.SupportPackageIsVersion4
 type AccountServiceClient interface {
 	CreateAccount(ctx context.Context, in *CreateAccountRequest, opts ...grpc.CallOption) (*CreateAccountResponse, error)
 	GetAccount(ctx context.Context, in *GetAccountRequest, opts ...grpc.CallOption) (*GetAccountResponse, error)
-	AddEmailAddress(ctx context.Context, in *AddEmailAddressRequest, opts ...grpc.CallOption) (*AddEmailAddressResponse, error)
+	RegisterEmailAddress(ctx context.Context, in *RegisterEmailAddressRequest, opts ...grpc.CallOption) (*RegisterEmailAddressResponse, error)
+	UnregisterEmailAddress(ctx context.Context, in *UnregisterEmailAddressRequest, opts ...grpc.CallOption) (*UnregisterEmailAddressResponse, error)
 	ConfirmEmailAddress(ctx context.Context, in *ConfirmEmailAddressRequest, opts ...grpc.CallOption) (*ConfirmEmailAddressResponse, error)
+	GetEmailAddress(ctx context.Context, in *GetEmailAddressRequest, opts ...grpc.CallOption) (*GetEmailAddressResponse, error)
 	GetEmailAddresses(ctx context.Context, in *GetEmailAddressesRequest, opts ...grpc.CallOption) (*GetEmailAddressesResponse, error)
-	GetEmailAddressByID(ctx context.Context, in *GetEmailAddressByIDRequest, opts ...grpc.CallOption) (*GetEmailAddressByIDResponse, error)
-	AddPhoneNumber(ctx context.Context, in *AddPhoneNumberRequest, opts ...grpc.CallOption) (*AddPhoneNumberResponse, error)
+	RegisterPhoneNumber(ctx context.Context, in *RegisterPhoneNumberRequest, opts ...grpc.CallOption) (*RegisterPhoneNumberResponse, error)
+	UnregisterPhoneNumber(ctx context.Context, in *UnregisterPhoneNumberRequest, opts ...grpc.CallOption) (*UnregisterPhoneNumberResponse, error)
 	ConfirmPhoneNumber(ctx context.Context, in *ConfirmPhoneNumberRequest, opts ...grpc.CallOption) (*ConfirmPhoneNumberResponse, error)
+	GetPhoneNumber(ctx context.Context, in *GetPhoneNumberRequest, opts ...grpc.CallOption) (*GetPhoneNumberResponse, error)
 	GetPhoneNumbers(ctx context.Context, in *GetPhoneNumbersRequest, opts ...grpc.CallOption) (*GetPhoneNumbersResponse, error)
-	GetPhoneNumberByID(ctx context.Context, in *GetPhoneNumberByIDRequest, opts ...grpc.CallOption) (*GetPhoneNumberByIDResponse, error)
 }
 
 type accountServiceClient struct {
@@ -106,9 +110,18 @@ func (c *accountServiceClient) GetAccount(ctx context.Context, in *GetAccountReq
 	return out, nil
 }
 
-func (c *accountServiceClient) AddEmailAddress(ctx context.Context, in *AddEmailAddressRequest, opts ...grpc.CallOption) (*AddEmailAddressResponse, error) {
-	out := new(AddEmailAddressResponse)
-	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/AddEmailAddress", in, out, opts...)
+func (c *accountServiceClient) RegisterEmailAddress(ctx context.Context, in *RegisterEmailAddressRequest, opts ...grpc.CallOption) (*RegisterEmailAddressResponse, error) {
+	out := new(RegisterEmailAddressResponse)
+	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/RegisterEmailAddress", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *accountServiceClient) UnregisterEmailAddress(ctx context.Context, in *UnregisterEmailAddressRequest, opts ...grpc.CallOption) (*UnregisterEmailAddressResponse, error) {
+	out := new(UnregisterEmailAddressResponse)
+	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/UnregisterEmailAddress", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -124,6 +137,15 @@ func (c *accountServiceClient) ConfirmEmailAddress(ctx context.Context, in *Conf
 	return out, nil
 }
 
+func (c *accountServiceClient) GetEmailAddress(ctx context.Context, in *GetEmailAddressRequest, opts ...grpc.CallOption) (*GetEmailAddressResponse, error) {
+	out := new(GetEmailAddressResponse)
+	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/GetEmailAddress", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *accountServiceClient) GetEmailAddresses(ctx context.Context, in *GetEmailAddressesRequest, opts ...grpc.CallOption) (*GetEmailAddressesResponse, error) {
 	out := new(GetEmailAddressesResponse)
 	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/GetEmailAddresses", in, out, opts...)
@@ -133,18 +155,18 @@ func (c *accountServiceClient) GetEmailAddresses(ctx context.Context, in *GetEma
 	return out, nil
 }
 
-func (c *accountServiceClient) GetEmailAddressByID(ctx context.Context, in *GetEmailAddressByIDRequest, opts ...grpc.CallOption) (*GetEmailAddressByIDResponse, error) {
-	out := new(GetEmailAddressByIDResponse)
-	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/GetEmailAddressByID", in, out, opts...)
+func (c *accountServiceClient) RegisterPhoneNumber(ctx context.Context, in *RegisterPhoneNumberRequest, opts ...grpc.CallOption) (*RegisterPhoneNumberResponse, error) {
+	out := new(RegisterPhoneNumberResponse)
+	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/RegisterPhoneNumber", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *accountServiceClient) AddPhoneNumber(ctx context.Context, in *AddPhoneNumberRequest, opts ...grpc.CallOption) (*AddPhoneNumberResponse, error) {
-	out := new(AddPhoneNumberResponse)
-	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/AddPhoneNumber", in, out, opts...)
+func (c *accountServiceClient) UnregisterPhoneNumber(ctx context.Context, in *UnregisterPhoneNumberRequest, opts ...grpc.CallOption) (*UnregisterPhoneNumberResponse, error) {
+	out := new(UnregisterPhoneNumberResponse)
+	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/UnregisterPhoneNumber", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -160,18 +182,18 @@ func (c *accountServiceClient) ConfirmPhoneNumber(ctx context.Context, in *Confi
 	return out, nil
 }
 
-func (c *accountServiceClient) GetPhoneNumbers(ctx context.Context, in *GetPhoneNumbersRequest, opts ...grpc.CallOption) (*GetPhoneNumbersResponse, error) {
-	out := new(GetPhoneNumbersResponse)
-	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/GetPhoneNumbers", in, out, opts...)
+func (c *accountServiceClient) GetPhoneNumber(ctx context.Context, in *GetPhoneNumberRequest, opts ...grpc.CallOption) (*GetPhoneNumberResponse, error) {
+	out := new(GetPhoneNumberResponse)
+	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/GetPhoneNumber", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *accountServiceClient) GetPhoneNumberByID(ctx context.Context, in *GetPhoneNumberByIDRequest, opts ...grpc.CallOption) (*GetPhoneNumberByIDResponse, error) {
-	out := new(GetPhoneNumberByIDResponse)
-	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/GetPhoneNumberByID", in, out, opts...)
+func (c *accountServiceClient) GetPhoneNumbers(ctx context.Context, in *GetPhoneNumbersRequest, opts ...grpc.CallOption) (*GetPhoneNumbersResponse, error) {
+	out := new(GetPhoneNumbersResponse)
+	err := c.cc.Invoke(ctx, "/alpacalabs.account.v1.AccountService/GetPhoneNumbers", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -182,14 +204,16 @@ func (c *accountServiceClient) GetPhoneNumberByID(ctx context.Context, in *GetPh
 type AccountServiceServer interface {
 	CreateAccount(context.Context, *CreateAccountRequest) (*CreateAccountResponse, error)
 	GetAccount(context.Context, *GetAccountRequest) (*GetAccountResponse, error)
-	AddEmailAddress(context.Context, *AddEmailAddressRequest) (*AddEmailAddressResponse, error)
+	RegisterEmailAddress(context.Context, *RegisterEmailAddressRequest) (*RegisterEmailAddressResponse, error)
+	UnregisterEmailAddress(context.Context, *UnregisterEmailAddressRequest) (*UnregisterEmailAddressResponse, error)
 	ConfirmEmailAddress(context.Context, *ConfirmEmailAddressRequest) (*ConfirmEmailAddressResponse, error)
+	GetEmailAddress(context.Context, *GetEmailAddressRequest) (*GetEmailAddressResponse, error)
 	GetEmailAddresses(context.Context, *GetEmailAddressesRequest) (*GetEmailAddressesResponse, error)
-	GetEmailAddressByID(context.Context, *GetEmailAddressByIDRequest) (*GetEmailAddressByIDResponse, error)
-	AddPhoneNumber(context.Context, *AddPhoneNumberRequest) (*AddPhoneNumberResponse, error)
+	RegisterPhoneNumber(context.Context, *RegisterPhoneNumberRequest) (*RegisterPhoneNumberResponse, error)
+	UnregisterPhoneNumber(context.Context, *UnregisterPhoneNumberRequest) (*UnregisterPhoneNumberResponse, error)
 	ConfirmPhoneNumber(context.Context, *ConfirmPhoneNumberRequest) (*ConfirmPhoneNumberResponse, error)
+	GetPhoneNumber(context.Context, *GetPhoneNumberRequest) (*GetPhoneNumberResponse, error)
 	GetPhoneNumbers(context.Context, *GetPhoneNumbersRequest) (*GetPhoneNumbersResponse, error)
-	GetPhoneNumberByID(context.Context, *GetPhoneNumberByIDRequest) (*GetPhoneNumberByIDResponse, error)
 }
 
 func RegisterAccountServiceServer(s *grpc.Server, srv AccountServiceServer) {
@@ -232,20 +256,38 @@ func _AccountService_GetAccount_Handler(srv interface{}, ctx context.Context, de
 	return interceptor(ctx, in, info, handler)
 }
 
-func _AccountService_AddEmailAddress_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(AddEmailAddressRequest)
+func _AccountService_RegisterEmailAddress_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(RegisterEmailAddressRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(AccountServiceServer).AddEmailAddress(ctx, in)
+		return srv.(AccountServiceServer).RegisterEmailAddress(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/alpacalabs.account.v1.AccountService/AddEmailAddress",
+		FullMethod: "/alpacalabs.account.v1.AccountService/RegisterEmailAddress",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(AccountServiceServer).AddEmailAddress(ctx, req.(*AddEmailAddressRequest))
+		return srv.(AccountServiceServer).RegisterEmailAddress(ctx, req.(*RegisterEmailAddressRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _AccountService_UnregisterEmailAddress_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(UnregisterEmailAddressRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(AccountServiceServer).UnregisterEmailAddress(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/alpacalabs.account.v1.AccountService/UnregisterEmailAddress",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(AccountServiceServer).UnregisterEmailAddress(ctx, req.(*UnregisterEmailAddressRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -268,6 +310,24 @@ func _AccountService_ConfirmEmailAddress_Handler(srv interface{}, ctx context.Co
 	return interceptor(ctx, in, info, handler)
 }
 
+func _AccountService_GetEmailAddress_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetEmailAddressRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(AccountServiceServer).GetEmailAddress(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/alpacalabs.account.v1.AccountService/GetEmailAddress",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(AccountServiceServer).GetEmailAddress(ctx, req.(*GetEmailAddressRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _AccountService_GetEmailAddresses_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(GetEmailAddressesRequest)
 	if err := dec(in); err != nil {
@@ -286,38 +346,38 @@ func _AccountService_GetEmailAddresses_Handler(srv interface{}, ctx context.Cont
 	return interceptor(ctx, in, info, handler)
 }
 
-func _AccountService_GetEmailAddressByID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(GetEmailAddressByIDRequest)
+func _AccountService_RegisterPhoneNumber_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(RegisterPhoneNumberRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(AccountServiceServer).GetEmailAddressByID(ctx, in)
+		return srv.(AccountServiceServer).RegisterPhoneNumber(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/alpacalabs.account.v1.AccountService/GetEmailAddressByID",
+		FullMethod: "/alpacalabs.account.v1.AccountService/RegisterPhoneNumber",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(AccountServiceServer).GetEmailAddressByID(ctx, req.(*GetEmailAddressByIDRequest))
+		return srv.(AccountServiceServer).RegisterPhoneNumber(ctx, req.(*RegisterPhoneNumberRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _AccountService_AddPhoneNumber_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(AddPhoneNumberRequest)
+func _AccountService_UnregisterPhoneNumber_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(UnregisterPhoneNumberRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(AccountServiceServer).AddPhoneNumber(ctx, in)
+		return srv.(AccountServiceServer).UnregisterPhoneNumber(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/alpacalabs.account.v1.AccountService/AddPhoneNumber",
+		FullMethod: "/alpacalabs.account.v1.AccountService/UnregisterPhoneNumber",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(AccountServiceServer).AddPhoneNumber(ctx, req.(*AddPhoneNumberRequest))
+		return srv.(AccountServiceServer).UnregisterPhoneNumber(ctx, req.(*UnregisterPhoneNumberRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -340,6 +400,24 @@ func _AccountService_ConfirmPhoneNumber_Handler(srv interface{}, ctx context.Con
 	return interceptor(ctx, in, info, handler)
 }
 
+func _AccountService_GetPhoneNumber_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetPhoneNumberRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(AccountServiceServer).GetPhoneNumber(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/alpacalabs.account.v1.AccountService/GetPhoneNumber",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(AccountServiceServer).GetPhoneNumber(ctx, req.(*GetPhoneNumberRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _AccountService_GetPhoneNumbers_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(GetPhoneNumbersRequest)
 	if err := dec(in); err != nil {
@@ -358,24 +436,6 @@ func _AccountService_GetPhoneNumbers_Handler(srv interface{}, ctx context.Contex
 	return interceptor(ctx, in, info, handler)
 }
 
-func _AccountService_GetPhoneNumberByID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(GetPhoneNumberByIDRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(AccountServiceServer).GetPhoneNumberByID(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: "/alpacalabs.account.v1.AccountService/GetPhoneNumberByID",
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(AccountServiceServer).GetPhoneNumberByID(ctx, req.(*GetPhoneNumberByIDRequest))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
 var _AccountService_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "alpacalabs.account.v1.AccountService",
 	HandlerType: (*AccountServiceServer)(nil),
@@ -389,36 +449,44 @@ var _AccountService_serviceDesc = grpc.ServiceDesc{
 			Handler:    _AccountService_GetAccount_Handler,
 		},
 		{
-			MethodName: "AddEmailAddress",
-			Handler:    _AccountService_AddEmailAddress_Handler,
+			MethodName: "RegisterEmailAddress",
+			Handler:    _AccountService_RegisterEmailAddress_Handler,
+		},
+		{
+			MethodName: "UnregisterEmailAddress",
+			Handler:    _AccountService_UnregisterEmailAddress_Handler,
 		},
 		{
 			MethodName: "ConfirmEmailAddress",
 			Handler:    _AccountService_ConfirmEmailAddress_Handler,
 		},
 		{
+			MethodName: "GetEmailAddress",
+			Handler:    _AccountService_GetEmailAddress_Handler,
+		},
+		{
 			MethodName: "GetEmailAddresses",
 			Handler:    _AccountService_GetEmailAddresses_Handler,
 		},
 		{
-			MethodName: "GetEmailAddressByID",
-			Handler:    _AccountService_GetEmailAddressByID_Handler,
+			MethodName: "RegisterPhoneNumber",
+			Handler:    _AccountService_RegisterPhoneNumber_Handler,
 		},
 		{
-			MethodName: "AddPhoneNumber",
-			Handler:    _AccountService_AddPhoneNumber_Handler,
+			MethodName: "UnregisterPhoneNumber",
+			Handler:    _AccountService_UnregisterPhoneNumber_Handler,
 		},
 		{
 			MethodName: "ConfirmPhoneNumber",
 			Handler:    _AccountService_ConfirmPhoneNumber_Handler,
 		},
 		{
-			MethodName: "GetPhoneNumbers",
-			Handler:    _AccountService_GetPhoneNumbers_Handler,
+			MethodName: "GetPhoneNumber",
+			Handler:    _AccountService_GetPhoneNumber_Handler,
 		},
 		{
-			MethodName: "GetPhoneNumberByID",
-			Handler:    _AccountService_GetPhoneNumberByID_Handler,
+			MethodName: "GetPhoneNumbers",
+			Handler:    _AccountService_GetPhoneNumbers_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

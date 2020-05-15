@@ -109,85 +109,85 @@ func (m *GetEmailAddressesResponse) GetEmailAddresses() []*EmailAddress {
 	return nil
 }
 
-type GetEmailAddressByIDRequest struct {
+type GetEmailAddressRequest struct {
 	Id                   string   `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
 }
 
-func (m *GetEmailAddressByIDRequest) Reset()         { *m = GetEmailAddressByIDRequest{} }
-func (m *GetEmailAddressByIDRequest) String() string { return proto.CompactTextString(m) }
-func (*GetEmailAddressByIDRequest) ProtoMessage()    {}
-func (*GetEmailAddressByIDRequest) Descriptor() ([]byte, []int) {
+func (m *GetEmailAddressRequest) Reset()         { *m = GetEmailAddressRequest{} }
+func (m *GetEmailAddressRequest) String() string { return proto.CompactTextString(m) }
+func (*GetEmailAddressRequest) ProtoMessage()    {}
+func (*GetEmailAddressRequest) Descriptor() ([]byte, []int) {
 	return fileDescriptor_5b7338160ae739ad, []int{2}
 }
 
-func (m *GetEmailAddressByIDRequest) XXX_Unmarshal(b []byte) error {
-	return xxx_messageInfo_GetEmailAddressByIDRequest.Unmarshal(m, b)
+func (m *GetEmailAddressRequest) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_GetEmailAddressRequest.Unmarshal(m, b)
 }
-func (m *GetEmailAddressByIDRequest) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	return xxx_messageInfo_GetEmailAddressByIDRequest.Marshal(b, m, deterministic)
+func (m *GetEmailAddressRequest) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_GetEmailAddressRequest.Marshal(b, m, deterministic)
 }
-func (m *GetEmailAddressByIDRequest) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_GetEmailAddressByIDRequest.Merge(m, src)
+func (m *GetEmailAddressRequest) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_GetEmailAddressRequest.Merge(m, src)
 }
-func (m *GetEmailAddressByIDRequest) XXX_Size() int {
-	return xxx_messageInfo_GetEmailAddressByIDRequest.Size(m)
+func (m *GetEmailAddressRequest) XXX_Size() int {
+	return xxx_messageInfo_GetEmailAddressRequest.Size(m)
 }
-func (m *GetEmailAddressByIDRequest) XXX_DiscardUnknown() {
-	xxx_messageInfo_GetEmailAddressByIDRequest.DiscardUnknown(m)
+func (m *GetEmailAddressRequest) XXX_DiscardUnknown() {
+	xxx_messageInfo_GetEmailAddressRequest.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_GetEmailAddressByIDRequest proto.InternalMessageInfo
+var xxx_messageInfo_GetEmailAddressRequest proto.InternalMessageInfo
 
-func (m *GetEmailAddressByIDRequest) GetId() string {
+func (m *GetEmailAddressRequest) GetId() string {
 	if m != nil {
 		return m.Id
 	}
 	return ""
 }
 
-type GetEmailAddressByIDResponse struct {
+type GetEmailAddressResponse struct {
 	EmailAddress         *EmailAddress `protobuf:"bytes,1,opt,name=email_address,json=emailAddress,proto3" json:"email_address,omitempty"`
 	XXX_NoUnkeyedLiteral struct{}      `json:"-"`
 	XXX_unrecognized     []byte        `json:"-"`
 	XXX_sizecache        int32         `json:"-"`
 }
 
-func (m *GetEmailAddressByIDResponse) Reset()         { *m = GetEmailAddressByIDResponse{} }
-func (m *GetEmailAddressByIDResponse) String() string { return proto.CompactTextString(m) }
-func (*GetEmailAddressByIDResponse) ProtoMessage()    {}
-func (*GetEmailAddressByIDResponse) Descriptor() ([]byte, []int) {
+func (m *GetEmailAddressResponse) Reset()         { *m = GetEmailAddressResponse{} }
+func (m *GetEmailAddressResponse) String() string { return proto.CompactTextString(m) }
+func (*GetEmailAddressResponse) ProtoMessage()    {}
+func (*GetEmailAddressResponse) Descriptor() ([]byte, []int) {
 	return fileDescriptor_5b7338160ae739ad, []int{3}
 }
 
-func (m *GetEmailAddressByIDResponse) XXX_Unmarshal(b []byte) error {
-	return xxx_messageInfo_GetEmailAddressByIDResponse.Unmarshal(m, b)
+func (m *GetEmailAddressResponse) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_GetEmailAddressResponse.Unmarshal(m, b)
 }
-func (m *GetEmailAddressByIDResponse) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	return xxx_messageInfo_GetEmailAddressByIDResponse.Marshal(b, m, deterministic)
+func (m *GetEmailAddressResponse) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_GetEmailAddressResponse.Marshal(b, m, deterministic)
 }
-func (m *GetEmailAddressByIDResponse) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_GetEmailAddressByIDResponse.Merge(m, src)
+func (m *GetEmailAddressResponse) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_GetEmailAddressResponse.Merge(m, src)
 }
-func (m *GetEmailAddressByIDResponse) XXX_Size() int {
-	return xxx_messageInfo_GetEmailAddressByIDResponse.Size(m)
+func (m *GetEmailAddressResponse) XXX_Size() int {
+	return xxx_messageInfo_GetEmailAddressResponse.Size(m)
 }
-func (m *GetEmailAddressByIDResponse) XXX_DiscardUnknown() {
-	xxx_messageInfo_GetEmailAddressByIDResponse.DiscardUnknown(m)
+func (m *GetEmailAddressResponse) XXX_DiscardUnknown() {
+	xxx_messageInfo_GetEmailAddressResponse.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_GetEmailAddressByIDResponse proto.InternalMessageInfo
+var xxx_messageInfo_GetEmailAddressResponse proto.InternalMessageInfo
 
-func (m *GetEmailAddressByIDResponse) GetEmailAddress() *EmailAddress {
+func (m *GetEmailAddressResponse) GetEmailAddress() *EmailAddress {
 	if m != nil {
 		return m.EmailAddress
 	}
 	return nil
 }
 
-type AddEmailAddressRequest struct {
+type RegisterEmailAddressRequest struct {
 	EmailAddress         string   `protobuf:"bytes,1,opt,name=email_address,json=emailAddress,proto3" json:"email_address,omitempty"`
 	AccountId            string   `protobuf:"bytes,2,opt,name=account_id,json=accountId,proto3" json:"account_id,omitempty"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
@@ -195,83 +195,153 @@ type AddEmailAddressRequest struct {
 	XXX_sizecache        int32    `json:"-"`
 }
 
-func (m *AddEmailAddressRequest) Reset()         { *m = AddEmailAddressRequest{} }
-func (m *AddEmailAddressRequest) String() string { return proto.CompactTextString(m) }
-func (*AddEmailAddressRequest) ProtoMessage()    {}
-func (*AddEmailAddressRequest) Descriptor() ([]byte, []int) {
+func (m *RegisterEmailAddressRequest) Reset()         { *m = RegisterEmailAddressRequest{} }
+func (m *RegisterEmailAddressRequest) String() string { return proto.CompactTextString(m) }
+func (*RegisterEmailAddressRequest) ProtoMessage()    {}
+func (*RegisterEmailAddressRequest) Descriptor() ([]byte, []int) {
 	return fileDescriptor_5b7338160ae739ad, []int{4}
 }
 
-func (m *AddEmailAddressRequest) XXX_Unmarshal(b []byte) error {
-	return xxx_messageInfo_AddEmailAddressRequest.Unmarshal(m, b)
+func (m *RegisterEmailAddressRequest) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_RegisterEmailAddressRequest.Unmarshal(m, b)
 }
-func (m *AddEmailAddressRequest) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	return xxx_messageInfo_AddEmailAddressRequest.Marshal(b, m, deterministic)
+func (m *RegisterEmailAddressRequest) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_RegisterEmailAddressRequest.Marshal(b, m, deterministic)
 }
-func (m *AddEmailAddressRequest) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_AddEmailAddressRequest.Merge(m, src)
+func (m *RegisterEmailAddressRequest) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RegisterEmailAddressRequest.Merge(m, src)
 }
-func (m *AddEmailAddressRequest) XXX_Size() int {
-	return xxx_messageInfo_AddEmailAddressRequest.Size(m)
+func (m *RegisterEmailAddressRequest) XXX_Size() int {
+	return xxx_messageInfo_RegisterEmailAddressRequest.Size(m)
 }
-func (m *AddEmailAddressRequest) XXX_DiscardUnknown() {
-	xxx_messageInfo_AddEmailAddressRequest.DiscardUnknown(m)
+func (m *RegisterEmailAddressRequest) XXX_DiscardUnknown() {
+	xxx_messageInfo_RegisterEmailAddressRequest.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_AddEmailAddressRequest proto.InternalMessageInfo
+var xxx_messageInfo_RegisterEmailAddressRequest proto.InternalMessageInfo
 
-func (m *AddEmailAddressRequest) GetEmailAddress() string {
+func (m *RegisterEmailAddressRequest) GetEmailAddress() string {
 	if m != nil {
 		return m.EmailAddress
 	}
 	return ""
 }
 
-func (m *AddEmailAddressRequest) GetAccountId() string {
+func (m *RegisterEmailAddressRequest) GetAccountId() string {
 	if m != nil {
 		return m.AccountId
 	}
 	return ""
 }
 
-type AddEmailAddressResponse struct {
+type RegisterEmailAddressResponse struct {
 	EmailAddress         *EmailAddress `protobuf:"bytes,1,opt,name=email_address,json=emailAddress,proto3" json:"email_address,omitempty"`
 	XXX_NoUnkeyedLiteral struct{}      `json:"-"`
 	XXX_unrecognized     []byte        `json:"-"`
 	XXX_sizecache        int32         `json:"-"`
 }
 
-func (m *AddEmailAddressResponse) Reset()         { *m = AddEmailAddressResponse{} }
-func (m *AddEmailAddressResponse) String() string { return proto.CompactTextString(m) }
-func (*AddEmailAddressResponse) ProtoMessage()    {}
-func (*AddEmailAddressResponse) Descriptor() ([]byte, []int) {
+func (m *RegisterEmailAddressResponse) Reset()         { *m = RegisterEmailAddressResponse{} }
+func (m *RegisterEmailAddressResponse) String() string { return proto.CompactTextString(m) }
+func (*RegisterEmailAddressResponse) ProtoMessage()    {}
+func (*RegisterEmailAddressResponse) Descriptor() ([]byte, []int) {
 	return fileDescriptor_5b7338160ae739ad, []int{5}
 }
 
-func (m *AddEmailAddressResponse) XXX_Unmarshal(b []byte) error {
-	return xxx_messageInfo_AddEmailAddressResponse.Unmarshal(m, b)
+func (m *RegisterEmailAddressResponse) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_RegisterEmailAddressResponse.Unmarshal(m, b)
 }
-func (m *AddEmailAddressResponse) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	return xxx_messageInfo_AddEmailAddressResponse.Marshal(b, m, deterministic)
+func (m *RegisterEmailAddressResponse) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_RegisterEmailAddressResponse.Marshal(b, m, deterministic)
 }
-func (m *AddEmailAddressResponse) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_AddEmailAddressResponse.Merge(m, src)
+func (m *RegisterEmailAddressResponse) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RegisterEmailAddressResponse.Merge(m, src)
 }
-func (m *AddEmailAddressResponse) XXX_Size() int {
-	return xxx_messageInfo_AddEmailAddressResponse.Size(m)
+func (m *RegisterEmailAddressResponse) XXX_Size() int {
+	return xxx_messageInfo_RegisterEmailAddressResponse.Size(m)
 }
-func (m *AddEmailAddressResponse) XXX_DiscardUnknown() {
-	xxx_messageInfo_AddEmailAddressResponse.DiscardUnknown(m)
+func (m *RegisterEmailAddressResponse) XXX_DiscardUnknown() {
+	xxx_messageInfo_RegisterEmailAddressResponse.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_AddEmailAddressResponse proto.InternalMessageInfo
+var xxx_messageInfo_RegisterEmailAddressResponse proto.InternalMessageInfo
 
-func (m *AddEmailAddressResponse) GetEmailAddress() *EmailAddress {
+func (m *RegisterEmailAddressResponse) GetEmailAddress() *EmailAddress {
 	if m != nil {
 		return m.EmailAddress
 	}
 	return nil
 }
+
+type UnregisterEmailAddressRequest struct {
+	EmailAddressId       string   `protobuf:"bytes,1,opt,name=email_address_id,json=emailAddressId,proto3" json:"email_address_id,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *UnregisterEmailAddressRequest) Reset()         { *m = UnregisterEmailAddressRequest{} }
+func (m *UnregisterEmailAddressRequest) String() string { return proto.CompactTextString(m) }
+func (*UnregisterEmailAddressRequest) ProtoMessage()    {}
+func (*UnregisterEmailAddressRequest) Descriptor() ([]byte, []int) {
+	return fileDescriptor_5b7338160ae739ad, []int{6}
+}
+
+func (m *UnregisterEmailAddressRequest) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_UnregisterEmailAddressRequest.Unmarshal(m, b)
+}
+func (m *UnregisterEmailAddressRequest) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_UnregisterEmailAddressRequest.Marshal(b, m, deterministic)
+}
+func (m *UnregisterEmailAddressRequest) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_UnregisterEmailAddressRequest.Merge(m, src)
+}
+func (m *UnregisterEmailAddressRequest) XXX_Size() int {
+	return xxx_messageInfo_UnregisterEmailAddressRequest.Size(m)
+}
+func (m *UnregisterEmailAddressRequest) XXX_DiscardUnknown() {
+	xxx_messageInfo_UnregisterEmailAddressRequest.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_UnregisterEmailAddressRequest proto.InternalMessageInfo
+
+func (m *UnregisterEmailAddressRequest) GetEmailAddressId() string {
+	if m != nil {
+		return m.EmailAddressId
+	}
+	return ""
+}
+
+type UnregisterEmailAddressResponse struct {
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *UnregisterEmailAddressResponse) Reset()         { *m = UnregisterEmailAddressResponse{} }
+func (m *UnregisterEmailAddressResponse) String() string { return proto.CompactTextString(m) }
+func (*UnregisterEmailAddressResponse) ProtoMessage()    {}
+func (*UnregisterEmailAddressResponse) Descriptor() ([]byte, []int) {
+	return fileDescriptor_5b7338160ae739ad, []int{7}
+}
+
+func (m *UnregisterEmailAddressResponse) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_UnregisterEmailAddressResponse.Unmarshal(m, b)
+}
+func (m *UnregisterEmailAddressResponse) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_UnregisterEmailAddressResponse.Marshal(b, m, deterministic)
+}
+func (m *UnregisterEmailAddressResponse) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_UnregisterEmailAddressResponse.Merge(m, src)
+}
+func (m *UnregisterEmailAddressResponse) XXX_Size() int {
+	return xxx_messageInfo_UnregisterEmailAddressResponse.Size(m)
+}
+func (m *UnregisterEmailAddressResponse) XXX_DiscardUnknown() {
+	xxx_messageInfo_UnregisterEmailAddressResponse.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_UnregisterEmailAddressResponse proto.InternalMessageInfo
 
 type ConfirmEmailAddressRequest struct {
 	EmailAddress         string   `protobuf:"bytes,1,opt,name=email_address,json=emailAddress,proto3" json:"email_address,omitempty"`
@@ -285,7 +355,7 @@ func (m *ConfirmEmailAddressRequest) Reset()         { *m = ConfirmEmailAddressR
 func (m *ConfirmEmailAddressRequest) String() string { return proto.CompactTextString(m) }
 func (*ConfirmEmailAddressRequest) ProtoMessage()    {}
 func (*ConfirmEmailAddressRequest) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5b7338160ae739ad, []int{6}
+	return fileDescriptor_5b7338160ae739ad, []int{8}
 }
 
 func (m *ConfirmEmailAddressRequest) XXX_Unmarshal(b []byte) error {
@@ -330,7 +400,7 @@ func (m *ConfirmEmailAddressResponse) Reset()         { *m = ConfirmEmailAddress
 func (m *ConfirmEmailAddressResponse) String() string { return proto.CompactTextString(m) }
 func (*ConfirmEmailAddressResponse) ProtoMessage()    {}
 func (*ConfirmEmailAddressResponse) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5b7338160ae739ad, []int{7}
+	return fileDescriptor_5b7338160ae739ad, []int{9}
 }
 
 func (m *ConfirmEmailAddressResponse) XXX_Unmarshal(b []byte) error {
@@ -365,7 +435,7 @@ func (m *GetEmailAddressesForAccountIDRequest) Reset()         { *m = GetEmailAd
 func (m *GetEmailAddressesForAccountIDRequest) String() string { return proto.CompactTextString(m) }
 func (*GetEmailAddressesForAccountIDRequest) ProtoMessage()    {}
 func (*GetEmailAddressesForAccountIDRequest) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5b7338160ae739ad, []int{8}
+	return fileDescriptor_5b7338160ae739ad, []int{10}
 }
 
 func (m *GetEmailAddressesForAccountIDRequest) XXX_Unmarshal(b []byte) error {
@@ -412,7 +482,7 @@ func (m *GetEmailAddressesForAccountIDResponse) Reset()         { *m = GetEmailA
 func (m *GetEmailAddressesForAccountIDResponse) String() string { return proto.CompactTextString(m) }
 func (*GetEmailAddressesForAccountIDResponse) ProtoMessage()    {}
 func (*GetEmailAddressesForAccountIDResponse) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5b7338160ae739ad, []int{9}
+	return fileDescriptor_5b7338160ae739ad, []int{11}
 }
 
 func (m *GetEmailAddressesForAccountIDResponse) XXX_Unmarshal(b []byte) error {
@@ -450,10 +520,12 @@ func (m *GetEmailAddressesForAccountIDResponse) GetEmailAddresses() []*EmailAddr
 func init() {
 	proto.RegisterType((*GetEmailAddressesRequest)(nil), "alpacalabs.account.v1.GetEmailAddressesRequest")
 	proto.RegisterType((*GetEmailAddressesResponse)(nil), "alpacalabs.account.v1.GetEmailAddressesResponse")
-	proto.RegisterType((*GetEmailAddressByIDRequest)(nil), "alpacalabs.account.v1.GetEmailAddressByIDRequest")
-	proto.RegisterType((*GetEmailAddressByIDResponse)(nil), "alpacalabs.account.v1.GetEmailAddressByIDResponse")
-	proto.RegisterType((*AddEmailAddressRequest)(nil), "alpacalabs.account.v1.AddEmailAddressRequest")
-	proto.RegisterType((*AddEmailAddressResponse)(nil), "alpacalabs.account.v1.AddEmailAddressResponse")
+	proto.RegisterType((*GetEmailAddressRequest)(nil), "alpacalabs.account.v1.GetEmailAddressRequest")
+	proto.RegisterType((*GetEmailAddressResponse)(nil), "alpacalabs.account.v1.GetEmailAddressResponse")
+	proto.RegisterType((*RegisterEmailAddressRequest)(nil), "alpacalabs.account.v1.RegisterEmailAddressRequest")
+	proto.RegisterType((*RegisterEmailAddressResponse)(nil), "alpacalabs.account.v1.RegisterEmailAddressResponse")
+	proto.RegisterType((*UnregisterEmailAddressRequest)(nil), "alpacalabs.account.v1.UnregisterEmailAddressRequest")
+	proto.RegisterType((*UnregisterEmailAddressResponse)(nil), "alpacalabs.account.v1.UnregisterEmailAddressResponse")
 	proto.RegisterType((*ConfirmEmailAddressRequest)(nil), "alpacalabs.account.v1.ConfirmEmailAddressRequest")
 	proto.RegisterType((*ConfirmEmailAddressResponse)(nil), "alpacalabs.account.v1.ConfirmEmailAddressResponse")
 	proto.RegisterType((*GetEmailAddressesForAccountIDRequest)(nil), "alpacalabs.account.v1.GetEmailAddressesForAccountIDRequest")
@@ -465,35 +537,37 @@ func init() {
 }
 
 var fileDescriptor_5b7338160ae739ad = []byte{
-	// 474 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xd4, 0x54, 0xdd, 0x6e, 0xd3, 0x30,
-	0x18, 0x55, 0x32, 0x09, 0xa9, 0xdf, 0xb6, 0x0e, 0x22, 0x0d, 0xba, 0x4e, 0x93, 0x46, 0xca, 0x44,
-	0x25, 0x98, 0xa3, 0x8c, 0x17, 0x20, 0xed, 0xf8, 0x99, 0x54, 0xa1, 0x91, 0x8b, 0x5d, 0xa0, 0x4a,
-	0x91, 0x6b, 0x9b, 0x60, 0xd4, 0xc6, 0xc1, 0x4e, 0x2b, 0xf1, 0x20, 0xbc, 0x00, 0xdc, 0xf1, 0x0c,
-	0x3c, 0x00, 0xe2, 0xa9, 0x50, 0x1d, 0x8f, 0x3a, 0xd4, 0x52, 0x11, 0x82, 0x8b, 0x5d, 0xe6, 0xf8,
-	0x9c, 0xef, 0x9c, 0xe3, 0xd8, 0x86, 0x13, 0x3c, 0x2d, 0x31, 0xc1, 0x53, 0x3c, 0x51, 0x11, 0x26,
-	0x44, 0xcc, 0x8b, 0x2a, 0x5a, 0xc4, 0x11, 0x2e, 0x79, 0xc6, 0x66, 0x98, 0x4f, 0x51, 0x29, 0x45,
-	0x25, 0x82, 0xfd, 0x15, 0x0d, 0x19, 0x1a, 0x5a, 0xc4, 0xdd, 0x9e, 0xa5, 0x2e, 0x71, 0xce, 0x0b,
-	0x5c, 0x71, 0x51, 0x2c, 0x07, 0x94, 0x38, 0x67, 0xb5, 0xb6, 0x7b, 0xdf, 0x6d, 0x61, 0x8d, 0x0f,
-	0xdf, 0x43, 0xe7, 0x05, 0xab, 0x9e, 0x2d, 0x91, 0x84, 0x52, 0xc9, 0x94, 0x62, 0x2a, 0x65, 0x1f,
-	0xe6, 0x4c, 0x55, 0xc1, 0x2b, 0x68, 0x93, 0xb9, 0x54, 0x42, 0x66, 0xb2, 0x46, 0x3a, 0xde, 0xb1,
-	0xd7, 0xdf, 0x3e, 0x7b, 0x88, 0xac, 0x4c, 0x2b, 0x73, 0xb4, 0x88, 0xd1, 0x50, 0xf3, 0xcd, 0x80,
-	0x74, 0x97, 0xd8, 0x9f, 0xe1, 0x37, 0x0f, 0x0e, 0x1c, 0x66, 0xaa, 0x14, 0x85, 0x62, 0xc1, 0x6b,
-	0xd8, 0xfb, 0xe5, 0x56, 0x43, 0xc6, 0xae, 0xbf, 0xd9, 0xae, 0xe6, 0xa7, 0x6d, 0xd2, 0xf8, 0x0e,
-	0x46, 0xb0, 0xa7, 0xbb, 0x66, 0xf8, 0xda, 0xad, 0xe3, 0x1f, 0x6f, 0xf5, 0xb7, 0xcf, 0x7a, 0xc8,
-	0xb9, 0xab, 0xc8, 0x8e, 0x96, 0xb6, 0x59, 0x23, 0x68, 0xf8, 0x18, 0xba, 0xbf, 0xa5, 0x1f, 0x7c,
-	0xbc, 0x38, 0xbf, 0xde, 0xac, 0x36, 0xf8, 0x9c, 0xea, 0xc4, 0xad, 0xd4, 0xe7, 0x34, 0xcc, 0xe1,
-	0xd0, 0xc9, 0x36, 0xd1, 0x5e, 0xc2, 0x6e, 0x23, 0x9a, 0xe9, 0xfa, 0x47, 0xc1, 0x76, 0xec, 0x60,
-	0xe1, 0x18, 0xee, 0x26, 0x94, 0x36, 0x08, 0x26, 0x52, 0xcf, 0xe5, 0xd1, 0x6a, 0xca, 0x83, 0x23,
-	0x00, 0xe3, 0x93, 0x71, 0xda, 0xf1, 0x35, 0xa3, 0x65, 0x90, 0x0b, 0x1a, 0x12, 0xb8, 0xb7, 0x36,
-	0xfd, 0x9f, 0x57, 0x28, 0xa0, 0x3b, 0x14, 0xc5, 0x5b, 0x2e, 0x67, 0x7f, 0x5d, 0xe3, 0x11, 0xdc,
-	0x21, 0xf5, 0x08, 0x7d, 0x38, 0x32, 0x22, 0x28, 0x33, 0x6d, 0x6e, 0xdb, 0x0b, 0x43, 0x41, 0x59,
-	0x78, 0x04, 0x87, 0x4e, 0xbf, 0xba, 0x58, 0xf8, 0xc9, 0x83, 0x07, 0x6b, 0xe7, 0xf4, 0xb9, 0x90,
-	0x89, 0xd9, 0x95, 0xf3, 0xff, 0x74, 0x41, 0x36, 0xfd, 0x8b, 0xef, 0x1e, 0x9c, 0x6c, 0xc8, 0x75,
-	0x43, 0xee, 0xd2, 0xe0, 0x8b, 0x07, 0x07, 0x44, 0xcc, 0xdc, 0xd2, 0xc1, 0x8e, 0x69, 0x74, 0xb9,
-	0x7c, 0xa2, 0x2e, 0xbd, 0x37, 0x4f, 0x73, 0x5e, 0xbd, 0x9b, 0x4f, 0x10, 0x11, 0xb3, 0x28, 0xd1,
-	0x8a, 0x91, 0x7e, 0xf7, 0x96, 0xcb, 0x92, 0x95, 0xe2, 0xd4, 0x68, 0x4f, 0x73, 0x11, 0x39, 0x9f,
-	0xbc, 0xcf, 0xfe, 0x56, 0x32, 0x4a, 0xbe, 0xfa, 0xfb, 0x2b, 0x35, 0x32, 0x1e, 0xe8, 0x2a, 0xfe,
-	0x61, 0xe3, 0x63, 0x83, 0x8f, 0xaf, 0xe2, 0xc9, 0x2d, 0xed, 0xf0, 0xe4, 0x67, 0x00, 0x00, 0x00,
-	0xff, 0xff, 0xb6, 0xb9, 0x71, 0xae, 0xab, 0x05, 0x00, 0x00,
+	// 498 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xd4, 0x94, 0xdf, 0x6e, 0xd3, 0x30,
+	0x14, 0xc6, 0x95, 0x4c, 0x42, 0xea, 0xd9, 0xd6, 0x8d, 0x48, 0x83, 0xae, 0xa3, 0xa8, 0xb8, 0x4c,
+	0x44, 0x42, 0x73, 0x94, 0xf1, 0x02, 0x64, 0xe5, 0x5f, 0xa5, 0x0a, 0x8d, 0x48, 0xec, 0x02, 0x4d,
+	0x8a, 0x5c, 0xdb, 0x64, 0x46, 0x6d, 0x1c, 0xec, 0xb4, 0x6f, 0xc2, 0x0b, 0xc0, 0x1d, 0xcf, 0xc0,
+	0x03, 0x20, 0x9e, 0x0a, 0x35, 0xf1, 0xd6, 0x84, 0x19, 0x8a, 0x10, 0x5c, 0x70, 0x99, 0xe3, 0x73,
+	0xbe, 0xdf, 0x77, 0x8e, 0xe3, 0x03, 0x87, 0x64, 0x9a, 0x13, 0x4a, 0xa6, 0x64, 0xa2, 0x03, 0x42,
+	0xa9, 0x9c, 0x67, 0x45, 0xb0, 0x08, 0x03, 0x92, 0x8b, 0x84, 0xcf, 0x88, 0x98, 0xe2, 0x5c, 0xc9,
+	0x42, 0x7a, 0x7b, 0xab, 0x34, 0x6c, 0xd2, 0xf0, 0x22, 0xec, 0x0e, 0x6a, 0xd5, 0x39, 0x49, 0x45,
+	0x46, 0x0a, 0x21, 0xb3, 0xa5, 0x40, 0x4e, 0x52, 0x5e, 0xd5, 0x76, 0xef, 0xd9, 0x11, 0x35, 0x79,
+	0xf4, 0x0e, 0x3a, 0xcf, 0x79, 0xf1, 0x74, 0x19, 0x89, 0x18, 0x53, 0x5c, 0x6b, 0xae, 0x63, 0xfe,
+	0x7e, 0xce, 0x75, 0xe1, 0xbd, 0x84, 0x36, 0x9d, 0x2b, 0x2d, 0x55, 0xa2, 0xaa, 0x48, 0xc7, 0xe9,
+	0x3b, 0xfe, 0xe6, 0xf1, 0x03, 0x5c, 0xf3, 0xb4, 0x82, 0xe3, 0x45, 0x88, 0x87, 0x65, 0xbe, 0x11,
+	0x88, 0xb7, 0x69, 0xfd, 0x13, 0x7d, 0x71, 0x60, 0xdf, 0x02, 0xd3, 0xb9, 0xcc, 0x34, 0xf7, 0x5e,
+	0xc1, 0xce, 0x15, 0xad, 0x0a, 0x19, 0x9c, 0xbf, 0x1e, 0x57, 0xe5, 0xc7, 0x6d, 0xda, 0xf8, 0xf6,
+	0xc6, 0xb0, 0x53, 0xf6, 0x9a, 0x90, 0x4b, 0x5a, 0xc7, 0xed, 0x6f, 0xf8, 0x9b, 0xc7, 0x03, 0x6c,
+	0x9d, 0x2a, 0xae, 0x5b, 0x8b, 0xdb, 0xbc, 0x61, 0x14, 0xf9, 0x70, 0xeb, 0x07, 0xf7, 0x97, 0x83,
+	0x6a, 0x83, 0x2b, 0x58, 0xe9, 0xb6, 0x15, 0xbb, 0x82, 0x21, 0x0a, 0xb7, 0xaf, 0x65, 0x1a, 0x4b,
+	0x2f, 0x60, 0xbb, 0x61, 0xc9, 0xf4, 0xf8, 0x5b, 0x86, 0xb6, 0xea, 0x86, 0x10, 0x81, 0x83, 0x98,
+	0xa7, 0x42, 0x17, 0x5c, 0xd9, 0x3c, 0x0d, 0x6c, 0xa0, 0x56, 0x53, 0xc3, 0xeb, 0x01, 0x18, 0x58,
+	0x22, 0x58, 0xc7, 0x2d, 0x33, 0x5a, 0x26, 0x32, 0x62, 0xe8, 0x02, 0xee, 0xd8, 0x11, 0x7f, 0xbd,
+	0x99, 0x11, 0xf4, 0x5e, 0x67, 0xea, 0x17, 0xed, 0xf8, 0xb0, 0xdb, 0x40, 0x25, 0x57, 0x03, 0x6f,
+	0x5c, 0xd3, 0x88, 0xa1, 0x3e, 0xdc, 0xfd, 0x99, 0x54, 0x65, 0x1b, 0x65, 0xd0, 0x1d, 0xca, 0xec,
+	0xad, 0x50, 0xb3, 0x3f, 0x1e, 0xdc, 0x43, 0xb8, 0x49, 0x2b, 0x89, 0xf2, 0x5f, 0x4c, 0xa8, 0x64,
+	0xdc, 0xcc, 0x6f, 0xb7, 0x7e, 0x30, 0x94, 0x8c, 0xa3, 0x1e, 0x1c, 0x58, 0x79, 0xc6, 0xce, 0x07,
+	0x07, 0xee, 0x5f, 0x7b, 0x16, 0xcf, 0xa4, 0x8a, 0xcc, 0x3d, 0x3c, 0xf9, 0x47, 0xef, 0x71, 0xdd,
+	0xed, 0x7f, 0x75, 0xe0, 0x70, 0x8d, 0xaf, 0xff, 0xe4, 0xe9, 0x9e, 0x7c, 0x72, 0x60, 0x9f, 0xca,
+	0x99, 0xbd, 0xf4, 0x64, 0xcb, 0x74, 0x74, 0xba, 0xdc, 0x88, 0xa7, 0xce, 0x9b, 0xc7, 0xa9, 0x28,
+	0x2e, 0xe6, 0x13, 0x4c, 0xe5, 0x2c, 0x88, 0xca, 0x8a, 0x71, 0xb9, 0x66, 0x97, 0xc7, 0x8a, 0xe7,
+	0xf2, 0xc8, 0xd4, 0x1e, 0xa5, 0x32, 0xb0, 0x6e, 0xd8, 0x8f, 0xee, 0x46, 0x34, 0x8e, 0x3e, 0xbb,
+	0x7b, 0xab, 0x6a, 0x6c, 0x18, 0xf8, 0x2c, 0xfc, 0x56, 0x8f, 0x9f, 0x9b, 0xf8, 0xf9, 0x59, 0x38,
+	0xb9, 0x51, 0x12, 0x1e, 0x7d, 0x0f, 0x00, 0x00, 0xff, 0xff, 0x91, 0x14, 0xdc, 0x60, 0x1a, 0x06,
+	0x00, 0x00,
 }
